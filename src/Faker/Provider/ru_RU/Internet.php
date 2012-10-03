@@ -9,8 +9,10 @@ class Internet extends \Faker\Provider\Internet {
 	protected static $tld = array('com', 'net', 'org', 'ru', 'su', 'ru', 'ru', 'ru', 'ru');
 
 	protected static $userNameFormats = array(
+		'{{lastName}}.{{firstName}}',
 		'{{lastName}}_{{firstName}}',
 		'{{lastName}}_{{firstName}}##',
+		'{{firstName}}.{{lastName}}',
 		'{{firstName}}_{{lastName}}',
 		'{{firstName}}_{{lastName}}##',
 		'{{firstName}}##',
